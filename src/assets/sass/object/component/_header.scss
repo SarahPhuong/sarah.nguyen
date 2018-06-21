@@ -1,0 +1,11 @@
+@charset "UTF-8";
+// Can use id, If you use class Please adding prefix .c-header
+
+.c-header{
+    display: inline-flex;
+    @include e('info'){
+        margin-left: 20px;
+        font-size: 17px;
+        font-family: Meiryo, serif
+    }
+}

@@ -1,0 +1,39 @@
+.c-footer{
+    &1{ 
+        border-top: 1px solid #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+        margin-top: 20px;
+    }
+   &2{
+       text-align: center;
+       padding: 15px 0 25px 0;
+       font-size: 12px;
+       font-family: Meiryo, serif;
+   }
+    @include e('1'){
+        display: inline-flex;
+        column-count: 4;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        img{
+            &:last-child{
+                margin-left: 40px;
+            }
+        }
+    }
+    @include e('info'){
+        font-size: 12px;
+        font-family: Meiryo, serif;
+        margin-left: 24px;
+        line-height: 20px;
+    }
+    @include e('border'){
+        border-bottom: 1px solid #a6a6a6;
+        display: -webkit-inline-box;
+    }
+    @include e('title'){
+        color: #6ea239;
+        font-weight: bold;
+    }
+
+}

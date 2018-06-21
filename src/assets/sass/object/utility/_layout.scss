@@ -1,0 +1,64 @@
+
+@charset "UTF-8";
+// Can use id, If you use class Please adding prefix .u-layout
+/*------------------------------------------------------------
+	Utility
+------------------------------------------------------------*/
+html{
+    font-size: 100%;
+}
+body {
+	min-width: 1140px;
+	line-height: 1.5;
+	font-family: $gothic;
+	-webkit-text-size-adjust: 100%;
+}
+.container{
+	padding: 0;
+	width: 100%;
+	position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wapper{
+	width:1140px;
+	margin:0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	overflow: hidden;
+}
+.mb{
+	display: none;
+}
+.pc{
+	display: block;
+}
+img{
+	width:100% ;
+	height: auto ;
+}
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 50%;
+    }
+   body{
+       max-width: 100%;
+       min-width: 320px;
+       display: block;
+   }
+    .container{
+        min-width: 320px;
+        width: 100%;
+    }
+    .wrapper{
+        width:100%;
+    }
+    .mb{
+        display: block;
+    }
+    .pc{
+        display: none;
+    }
+
+}

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+// Can use id, If you use class Please adding prefix .c-mainvisual
+.c-mainvisual{
+    background-size: cover;
+    overflow: hidden;
+    &1{
+        background: url(../img/mainvisual1.png) no-repeat center top;
+        height: 479px;
+        text-align: right;
+        p{
+            margin-top: 25px;
+        }
+    }
+    &2{
+        background: url(../img/mainvisual2.png) no-repeat center top;
+        height: 335px;
+        p{
+            margin-top: 25px;
+        }
+    }
+    
+}
