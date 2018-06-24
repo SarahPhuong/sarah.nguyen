@@ -1,11 +1,9 @@
 @charset "UTF-8";
-// レイアウト用css for Layout
 // Can use id, If you use class Please adding prefix .l- 
 /*------------------------------------------------------------
 	Layout
 ------------------------------------------------------------*/
 body {
-	/* ウインドウ幅で横スクロール時に背景が切れるバグ対策でコンテンツと同じ幅を指定 */
 	line-height: 1.5;
 	text-align: center;
 	background-color:#f8f5f1;
@@ -71,12 +69,12 @@ nav{
 		border-left: 1px dashed #ddd;
 		.nav-link{
 			h1{
-				font-family: "游明朝",YuMinCho,"ヒラギノ明朝 ProN W3","Hoiragino Mincho ProN","HG明朝E","MSP明朝", sans-serif;
+				font-family: Arial, Helvetica, sans-serif;
 			}
 			color: #000;
 			span{
 				color: $primary-color;
-				font-family: "游ゴシック","YuGoth-ic","メイリオ","Meiryo",'ヒラギノ角ゴ Pro','Hoiragino Kaku Gothic Pro', serif;
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 			}
 		}
 		i{
@@ -125,7 +123,7 @@ nav{
 	}
 	h2{
 		text-align: center;
-		font-family: "游明朝",YuMinCho,"ヒラギノ明朝 ProN W3","Hoiragino Mincho ProN","HG明朝E","MSP明朝", sans-serif;
+		font-family: Arial, Helvetica, sans-serif;
 		padding-left: 3%;
 		span{
 			margin-right: 1%

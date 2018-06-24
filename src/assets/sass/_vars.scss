@@ -1,9 +1,5 @@
 @charset "UTF-8";
-//Google Fonts
-// HTML5か否か
 $use-html5: true;
-
-// サポートブラウザの設定
 $support-ie6: false;
 $support-ie7: false;
 $support-ie8: false;
@@ -11,8 +7,6 @@ $support-ie9: false;
 $support-mozilla: true;
 $support-webkit : true;
 $support-opera  : false;
-
-// ベンダープレフィックスの設定
 $set_prefix: -webkit-, -moz-, -ms-, '';
 
 
@@ -22,12 +16,9 @@ $green-color:#b5d6b1;
 $font-bold: bold;
 
 // @font-face {
-//   font-family: 'YuMincho';
-//   src: url(assets/fonts/yumin.ttf) format('ttf');
+//   font-family: ...;
+//   src: url(...) format('ttf');
 //   font-weight: $font-bold;
 //   font-style: normal;
 // }
-// $gothic: "游ゴシック","YuGothic", "メイリオ", "Meiryo",'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', sans-serif;
-// $mincho:"游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN","HG明朝E", "ＭＳ Ｐ明朝", serif;
-
 
