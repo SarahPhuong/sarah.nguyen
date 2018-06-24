@@ -12,15 +12,14 @@ var setting = {
   },
   browserSync: {
     server:{
-        baseDir: 'httpdocs',
+        baseDir: 'dist',
 				proxy: "localhost:3000"
     },
   },
   imagemin: {
-    disabled: false,  // falseでimageminを実行
-    level: 7  // 圧縮率
+    disabled: false,  // false
+    level: 7
   },
-  // css、jsのミニファイの有効化/無効化
   minify: {
     css: false,
     js: false
@@ -37,35 +36,35 @@ var setting = {
   path: {
     base: {
       src: 'src',
-      dest: 'httpdocs'
+      dest: 'dist'
     },
     sass: {
       src: 'src/assets/sass/**/*.scss',
-      dest: 'httpdocs/assets/css/',
+      dest: 'dist/assets/css/',
     },
     js: {
       src: 'src/assets/js/**/*.js',
-      dest: 'httpdocs/assets/js/',
+      dest: 'dist/assets/js/',
     },
     image: {
       src: 'src/assets/img/**/*',
-      dest: 'httpdocs/assets/img/',
+      dest: 'dist/assets/img/',
     },
     lib: {
       src: 'src/assets/lib/**/*',
-      dest: 'httpdocs/assets/lib/',
+      dest: 'dist/assets/lib/',
     },
     include: {
       src: ['src/assets/include/**/*'],
-      dest: 'httpdocs/assets/include/',
+      dest: 'dist/assets/include/',
     },
     fonts: {
       src: 'src/assets/fonts/**/*',
-      dest: 'httpdocs/assets/fonts/',
+      dest: 'dist/assets/fonts/',
     },
     etc: {
       src: 'src/assets/etc/**/*',
-      dest: 'httpdocs/assets/etc/',
+      dest: 'dist/assets/etc/',
     },
     html: {
       src: ['src/**/*', '!src/assets/**/*']
@@ -73,7 +72,6 @@ var setting = {
   }
 };
 
-// 画像の圧縮
 gulp.task('imagemin', function(){
   if(!setting.imagemin.disabled){
     var imageminOptions = {
@@ -275,9 +273,9 @@ gulp.task('watch',function(){
   gulp.watch([setting.path.html.src], ['html']);
   gulp.watch([setting.path.image.src], ['imagemin']);
 
-  gulp.watch("httpdocs/*.html").on('change', browserSync.reload);
-  gulp.watch("httpdocs/**/*.css").on('change', browserSync.reload);
-  gulp.watch("httpdocs/**/*.js").on('change', browserSync.reload);
+  gulp.watch("dist/*.html").on('change', browserSync.reload);
+  gulp.watch("dist/**/*.css").on('change', browserSync.reload);
+  gulp.watch("dist/**/*.js").on('change', browserSync.reload);
 
 });
 
