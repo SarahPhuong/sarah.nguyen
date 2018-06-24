@@ -1,40 +1,19 @@
-<div class="container">
-	<div id="about" class="thumbnail">
-		<h2>
-			<span>About me <br class="br" /></span></br>
-			<small>
-				The new common language will be more simple and regular than.
-			</small>
-		</h2>
-		<hr />
+<div id="tab-container" class="tab-container">
+	<!-- Tab Menu List -->
+		@@include('./_menu.html')
+	<!-- End Tab List -->
+	<div id="tab-data-wrap">
+		<!-- About Tab Data -->
 		@@include('./_about.html')
-		<div class="row">
-			<div class="col-sm-12 col-md-12 col-md-12 col-lg-12 col-xl-12 ">
-				<div id="view-more">
-					<a href="#"> VIEW MORE > </a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="services" class="thumbnail">
-		<h2><span>Services <br class="br" /></h2>
-		<hr />
-		@@include('./_services.html')
-		<div class="row">
-			<div class="col-sm-12 col-md-12 col-md-12 col-lg-12 col-xl-12">
-				<div id="view-more">
-					<a href="#"> VIEW MORE > </a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="work">
-		@@include('./_work.html')
-	</div>
-	<div id="testimonial">
-		@@include('./_testimonial.html')
-	</div>
-	<div id="contact">
+		<!-- End About Tab Data -->
+		<!-- Resume Tab Data -->
+		@@include('./_resume.html')
+		<!-- End Resume Tab Data -->
+		<!-- Portfolio Tab Data -->
+		@@include('./_portfolio.html')
+		<!-- End Portfolio Data -->
+		<!-- Contact Tab Data -->
 		@@include('./_contact.html')
+		<!-- End Contact Data -->
 	</div>
 </div>

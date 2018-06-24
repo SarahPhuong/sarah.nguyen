@@ -10,7 +10,17 @@
 <link rel="stylesheet" href="assets/lib/css/main.css">
 </head>
 <body class="bg-fixed bg-1">
-	@@include('./assets/include/temp.html')
+	<div class="main-container">
+    	<div class="main wrapper clearfix">
+      		<!-- Header Start -->
+			@@include('assets/include/header.html')
+			<!-- Header End -->
+			<!-- Main Tab Container -->
+			@@include('assets/include/content.html')
+			<!-- End Tab Container -->
+			@@include('assets/include/footer.html')
+		</div><!-- #main -->
+	</div><!-- #main-container -->
 	<script src="assets/lib/js/jquery-3.2.1.min.js"></script>
 	<script src="assets/lib/js/jquery.hashchange.min.js"></script>
 	<script src="assets/lib/js/jquery.easytabs.min.js"></script>
