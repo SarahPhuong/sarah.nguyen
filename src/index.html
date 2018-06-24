@@ -4,35 +4,38 @@
 <meta charset="UTF-8">
 <meta name="description" content="">
 <meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title></title>
 <link rel="stylesheet" href="assets/lib/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <link href="assets/css/common.css" rel="stylesheet">
 <link href="assets/css/index.css" rel="stylesheet">
-
+<link href="assets/css/mobile.css" rel="stylesheet">
+<script src="assets/js/common.js"></script>
 </head>
-	<body>
-		<button onclick="topFunction()" id="btnBack" title="Go to top">
-			<!-- <img src="assets/img/icon_BackToTop.jpg"/> -->
-		</button>
-		<div class="container-fluid full-page">
-			<!-- header -->
-			<header>
-				@@include('./assets/include/header.html')
-			</header>
-			<!-- /header -->
-			<!-- content -->
-			<!-- <div id="c-content"> -->
-				<!-- @@include('./assets/include/content.html') -->
-			<!-- </div> -->
-			<!-- /content -->
-			<!-- <footer>
-				@@include('./assets/include/footer.html')
-			</footer> -->
+<body>
+<div class="container-fluid">
+	<div id="container">
+		<!-- header -->
+		<header>
+			@@include('./assets/include/header.html')
+		</header>
+		<!-- /header -->
+		<!-- content -->
+		<div class="content">
+			@@include('./assets/include/content.html')
 		</div>
-		<script src="assets/lib/js/jquery-3.2.1.min.js"></script>
-		<script src="assets/lib/js/popper.min.js"></script>
-		<script src="assets/lib/js/bootstrap.min.js"></script>
-		<script src="assets/js/common.js"></script>
-	</body>
+		<!-- /content -->
+		<footer>
+			@@include('./assets/include/footer.html')
+		</footer>
+		
+	</div>
+</div>
+	<script src="assets/lib/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/lib/js/popper.min.js"></script>
+    <script src="assets/lib/js/bootstrap.min.js"></script>
+  	
+    
+</body>
 </html>

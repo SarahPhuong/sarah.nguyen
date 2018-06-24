@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import "vars";	// 変数 Variable
+@import "functions"; // 関数等 Function
+/*------------------------------------------------------------
+	Top page
+------------------------------------------------------------*/
+.sample {
+	transform: scale(1);
+	background-size: cover;
+	-webkit-background-size: cover;
+	display: flex;
+}

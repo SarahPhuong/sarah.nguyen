@@ -1,9 +1,0 @@
-@charset "UTF-8";
-.clearfix {
-	*zoom: 1;
-	&:after {
-		display: block;
-		clear: both;
-		content: "";
-	}
-}

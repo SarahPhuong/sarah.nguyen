@@ -1,0 +1,295 @@
+// @media screen and (max-width: 1024px) {
+// 	#logo {
+// 		img{
+// 			width: 300px;
+// 	    	height: 200px;
+// 		}
+// 	}
+	
+// 	#info {
+// 		.info-detail{
+// 			margin: 15px 0;
+			
+// 			img{
+// 				width: 50px
+// 			}
+// 			h3{
+// 				font-size: 14px
+// 			}
+// 			span{
+// 				font-size: 10px
+// 			}
+// 		}
+// 	}
+// 	.navbar-nav{
+// 	.nav-item{
+// 		text-align: center;
+// 		padding: 0 2px;
+// 	}
+// }
+// }
+// @media screen and (min-width: 1000px) {
+// 	.col-res{
+// 		flex: 0 0 33.333333%;
+//     	max-width: 33.333333%
+// 	}
+// }
+// @media screen and (max-width: 991px) {
+// 	body{
+// 		font-size: 18px;
+// 	}
+// 	#logo {
+// 		img{
+// 			width: 155px;
+// 	    	height: 180px;
+// 		}
+// 	}
+// 	/*------------------------------------------------------------
+// 		Navi
+// 	------------------------------------------------------------*/
+// 	.navbar{
+// 		padding: 0;
+// 		.navbar-toggler:focus, .navbar-toggler:hover{
+// 			outline:none;
+// 		}
+// 		.navbar-collapse{
+// 		background: #d53a1e;
+// 		margin-top: 10%;
+// 			.navbar-nav{
+// 				.nav-item{
+// 					border-bottom: 1px solid #ccc;
+// 					color: #fff;
+// 					padding: 2px 0;
+// 					h1{
+// 						span{
+// 							display: none;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+
+// 	.navbar-nav{
+// 		.nav-item{
+// 			border-left: 0;
+// 			padding: 0 40px;
+// 			.nav-link{
+// 				color: #fff;
+// 				span{
+// 					color: #000;
+// 					font-family: "游ゴシック","YuGothic", "メイリオ", "Meiryo",'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', sans-serif;
+// 				}
+// 			}
+// 			i{
+// 			    border-radius: 20px;
+// 			    padding: 5px;
+// 			    margin: 5px;
+// 			    font-size: 8px;
+// 			}
+// 		}
+// 	}
+// 	/*------------------------------------------------------------
+// 		Slider
+// 	--------------------------------------------------------------*/
+// 	.slider {
+// 		.carousel-indicators{
+// 			z-index: 8
+// 		}
+// 	}
+
+// 	/*-------- content ----------*/
+// 	.thumbnail {
+// 		hr{
+// 			width: 20%
+// 		}
+// 		.br{
+// 			display: block;
+// 		}
+// 		.items {
+// 			.items-header{
+// 				h3{
+// 					// font-size: 30px
+// 				}
+// 				.new{
+// 					font-size: 20px
+// 				}
+// 			} 
+// 			.items-footer {
+// 				img{
+// 					width: 10%;
+//     				height: 5%;
+// 				}
+// 			}
+// 		}
+
+// 	}
+
+// 	/*----- contents tag -----*/
+// 	#content-tag{
+// 		hr{
+// 			width: 10%
+// 		}
+//     	.ct {
+// 			ul{
+// 				li{
+// 				    padding: 8px 20px;
+// 				    font-size: 10px;
+// 				}
+// 			}	
+// 		}
+// 	}
+
+// 	/*---- footer -----*/
+// 	footer{
+// 		img{
+// 			width: 10%;
+// 		    float: left;
+// 		    margin-right: 4%;
+// 		}
+// 		.br{
+// 			display: block;
+// 		}
+// 	}
+// }
+
+// @media screen and (max-width: 768px){
+// 	#logo {
+// 		img{
+// 			width: 180px;
+// 	    	height: 160px;
+// 		}
+// 	}
+	
+	
+// }
+// @media screen and (max-width: 680px) {
+// 	#logo {
+// 		img{
+// 			width: 120px;
+// 	    	height: 100px;
+// 		}
+// 	}
+// 	nav{
+// 		min-height:35px;
+// 		.navbar-toggler{
+// 			font-size: 2.25rem;
+// 			top: 5px;
+// 		}
+// 	}
+// 	#content-tag{
+// 		hr{
+// 			width: 15%
+// 		}
+// 		.img-mobile{
+//     		display: block;
+//     	}
+//     	.img-desktop{
+//     		display: none
+//     	}
+//     	.ct {
+// 			ul{
+// 				li{
+// 				    padding: 8px 20px;
+// 				}
+// 			}	
+// 		}
+// 	}
+// 	#info{
+// 		.info-detail{
+// 			min-height: 80px;
+// 			img{
+// 				width: 50px;
+// 				position: absolute;
+// 			}
+// 			h3{
+// 				font-size: 10px
+// 			}
+// 			span{
+// 				font-size: 8px
+// 			}
+// 		}
+// 	}
+
+
+// }
+
+// @media screen and (max-width: 640px) {
+// 	.col-res{
+// 		max-width: 100% !important;    
+// 		flex: 0 0 100%;
+// 	}
+// 	.thumbnail {
+// 		#view-more{
+// 			width:100%;
+// 		}
+// 	}
+	
+// 	#info{
+// 		.info-detail{
+// 			img{
+// 				width: 70px;
+//     			position: inherit;
+// 			}
+// 			h3{
+// 				font-size: 24px
+// 			}
+// 			span{
+// 				font-size: 14px
+// 			}
+// 		}
+// 	}
+// }
+
+// @media screen and (max-width: 500px) {
+// 	nav{
+// 		min-height:40px;
+// 		.navbar-toggler{
+// 			font-size: 2.25rem;
+// 			top: 5px;
+// 		}
+// 	}
+
+// }
+
+// @media screen and (max-width: 400px) {
+
+// 	nav{
+// 		min-height:30px;
+// 		.navbar-toggler{
+// 			font-size: 1.25rem;
+// 			top: 5px;
+// 		}
+// 	}
+// 	.thumbnail {
+// 		h2 {
+// 			span{
+// 				font-size: 21px;
+// 			}
+// 			small{
+// 				font-size: 13px;
+// 			}
+// 		}
+// 		.items-footer{
+// 			p{
+// 				span{
+// 					font-size: 14px;
+// 				    margin-right: 40px;
+// 				    float: left;
+// 				}
+// 				img{
+// 					position: absolute;
+// 					right: 20px;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	footer {
+// 		img{
+// 			width: 16%;
+// 		}
+// 		p{
+// 			margin:30px 0;
+// 		}
+// 	}
+// }

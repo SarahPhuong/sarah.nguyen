@@ -12,14 +12,15 @@ var setting = {
   },
   browserSync: {
     server:{
-        baseDir: 'dist',
+        baseDir: 'httpdocs',
 				proxy: "localhost:3000"
     },
   },
   imagemin: {
-    disabled: false,
-    level: 7
+    disabled: false,  // falseでimageminを実行
+    level: 7  // 圧縮率
   },
+  // css、jsのミニファイの有効化/無効化
   minify: {
     css: false,
     js: false
@@ -36,35 +37,35 @@ var setting = {
   path: {
     base: {
       src: 'src',
-      dest: 'dist'
+      dest: 'httpdocs'
     },
     sass: {
       src: 'src/assets/sass/**/*.scss',
-      dest: 'dist/assets/css/',
+      dest: 'httpdocs/assets/css/',
     },
     js: {
       src: 'src/assets/js/**/*.js',
-      dest: 'dist/assets/js/',
+      dest: 'httpdocs/assets/js/',
     },
     image: {
       src: 'src/assets/img/**/*',
-      dest: 'dist/assets/img/',
+      dest: 'httpdocs/assets/img/',
     },
     lib: {
       src: 'src/assets/lib/**/*',
-      dest: 'dist/assets/lib/',
+      dest: 'httpdocs/assets/lib/',
     },
     include: {
       src: ['src/assets/include/**/*'],
-      dest: 'dist/assets/include/',
+      dest: 'httpdocs/assets/include/',
     },
     fonts: {
       src: 'src/assets/fonts/**/*',
-      dest: 'dist/assets/fonts/',
+      dest: 'httpdocs/assets/fonts/',
     },
     etc: {
       src: 'src/assets/etc/**/*',
-      dest: 'dist/assets/etc/',
+      dest: 'httpdocs/assets/etc/',
     },
     html: {
       src: ['src/**/*', '!src/assets/**/*']
@@ -72,6 +73,7 @@ var setting = {
   }
 };
 
+// 画像の圧縮
 gulp.task('imagemin', function(){
   if(!setting.imagemin.disabled){
     var imageminOptions = {
@@ -119,10 +121,7 @@ gulp.task('html', function(){
     )
     .pipe(fileinclude({
       prefix: '@@',
-      basepath: '@file',
-      context:{
-        normal: true
-      }
+      basepath: '@file'
     }))
     .pipe($.plumber({
       errorHandler: $.notify.onError("Error: <%= error.message %>") //<-
@@ -166,10 +165,7 @@ gulp.task('include', function(){
     )
     .pipe(fileinclude({
       prefix: '@@',
-      basepath: '@file',
-      context:{
-        normal: true
-      }
+      basepath: '@file'
     }))
     .pipe($.plumber({
       errorHandler: $.notify.onError("Error: <%= error.message %>") //<-
@@ -279,9 +275,9 @@ gulp.task('watch',function(){
   gulp.watch([setting.path.html.src], ['html']);
   gulp.watch([setting.path.image.src], ['imagemin']);
 
-  gulp.watch("dist/*.html").on('change', browserSync.reload);
-  gulp.watch("dist/**/*.css").on('change', browserSync.reload);
-  gulp.watch("dist/**/*.js").on('change', browserSync.reload);
+  gulp.watch("httpdocs/*.html").on('change', browserSync.reload);
+  gulp.watch("httpdocs/**/*.css").on('change', browserSync.reload);
+  gulp.watch("httpdocs/**/*.js").on('change', browserSync.reload);
 
 });
 

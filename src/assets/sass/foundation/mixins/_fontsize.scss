@@ -1,3 +1,0 @@
-@mixin fs($fontSize, $baseFontSize:10){
-	font-size: #{$fontSize / $baseFontSize}rem;
-}

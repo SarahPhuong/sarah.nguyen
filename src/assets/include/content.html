@@ -1,4 +1,40 @@
-<div class="row">
-    <div class="col">hello</div>
-    <div class="col">xin chao</div>
+<div class="container">
+	<div id="about" class="thumbnail">
+		<h2>
+			<span>About me <br class="br" /></span></br>
+			<small>
+				The new common language will be more simple and regular than.
+			</small>
+		</h2>
+		<hr />
+		@@include('./_about.html')
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-md-12 col-lg-12 col-xl-12 ">
+				<div id="view-more">
+					<a href="#"> VIEW MORE > </a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="services" class="thumbnail">
+		<h2><span>Services <br class="br" /></h2>
+		<hr />
+		@@include('./_services.html')
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-md-12 col-lg-12 col-xl-12">
+				<div id="view-more">
+					<a href="#"> VIEW MORE > </a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="work">
+		@@include('./_work.html')
+	</div>
+	<div id="testimonial">
+		@@include('./_testimonial.html')
+	</div>
+	<div id="contact">
+		@@include('./_contact.html')
+	</div>
 </div>
